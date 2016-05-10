@@ -1,0 +1,349 @@
+body
+{
+    width: 95%;
+    background-color: #F8E44A;
+    font-family: Arial;
+    margin: auto;
+}
+
+
+header
+{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #FACC2E;
+    height: 150px;
+    border-radius: 10px;
+}
+
+form#connexion
+{
+    float: right;
+}
+
+nav
+{
+    color: #6E6E6E;
+    padding-top: 60px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    text-align: center;
+    line-height:25px;
+}
+
+nav li
+{
+    display: inline;
+    padding: 5px;
+    border-left: 1px solid #999;
+}
+
+nav li:first-child
+{
+    border-left: none;
+}
+
+#logo
+
+{
+    float: left;
+    border-radius: 15px;
+}
+
+section#centrale
+{
+    width: 60%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #6E6E6E;
+}
+
+article.main
+
+{
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Ce diplay: inline-block; sur div me sert pour dire que les p doivent être mis à coté de l'image */
+
+article div
+{
+    display: inline-block;
+    width: 70%;
+    padding-left: 10px;
+}
+.image, .image-aside
+
+{
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10 px;
+    width: 90px;
+
+}
+
+.nomProduit,.prixProduit
+
+{
+    font-weight: bold;
+}
+
+p.texte
+{
+    color: #6E6E6E;
+    font-size: small;
+}
+
+aside
+{
+    width: 20%;
+    float: right;
+    padding: 60px;
+    background-color: white;
+    border-radius: 10px;
+    color: #6E6E6E;
+
+}
+
+.annaside
+
+{
+    margin: 1px;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: small;
+    text-align: center;
+}
+
+
+footer
+
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+li:hover
+{
+    color:red;
+    text-decoration:underline;
+}
+
+article.main:hover
+
+{
+    color:#6E6E6E;
+    text-decoration:underline;
+    background-color: #FACC2E;
+}
+
+
+
+h1
+{
+    background-color: white;
+    color: #6E6E6E;
+    font-size: x-large;
+    text-align: center;
+}
+
+h2
+{
+    background-color: white;
+    color: #DE8808;
+    font-size: large;
+    text-align: center;
+}
+
+section#searchForm
+
+{
+    width: 100%;
+    font-family: Arial;
+    margin: 1em 0 1em 0;
+    border-radius: 10px;
+}
+
+#searchForm
+
+{
+    margin-right: 20px;
+}
+
+select
+
+{
+    width: 40%;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #6E6E6E;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+input[type="text"]
+
+{
+    width: 50%;
+    height: 20px;
+    display: block;
+    margin: 10px 0 1px 0;
+    color: red;
+    font-weight:bold;
+    font-size: 18px;
+
+}
+
+input[type="submit"]
+
+{
+    width: 30%;
+    background-color:#768d87;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:18px;
+    font-weight:bold;
+    margin: 5px 0 5px 0;
+}
+
+input[type="submit"]:hover {
+    background-color:#ABA04F;
+}
+
+input[type="submit"]:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+textarea
+
+{
+    width: 50%;
+    font-weight:bold;
+    font-size: 18px;
+    color: #6E6E6E;
+}
+
+
+
+#contactForm
+
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    padding: em;
+}
+
+/* fond rose */
+
+@media screen and (max-width: 769px)
+
+{
+    body
+    {
+        background-color: #ff8080;
+    }
+
+    nav{
+        display: inline-block;
+        padding: 2px;
+        border: 2px;
+        padding-top: 0px;
+    }
+
+    nav li, nav ul
+    {
+        font-size: medium;
+        border-left: none;
+        text-align: left;
+        display: block;
+        padding: 1px;
+    }
+
+    nav ul
+    {
+        line-height:18px;
+    }
+
+
+    aside
+    {
+        padding:15px;
+    }
+    .image-aside
+    {
+        width: 120%;
+    }
+
+    form#connexion
+    {
+        display: none;
+    }
+
+    /* fond vert */
+    @media screen and (max-width: 478px)
+
+    {
+
+        body
+        {
+            background-color: #66ff66;
+        }
+
+        nav, nav li, nav ul
+        {
+            text-align: left;
+            border-left: none;
+            font-size: small;
+            padding-top: 0px;
+            overflow: hidden;
+        }
+
+        #logo{
+            width: 30%;
+        }
+
+        nav{
+            display: inline-block;
+            border: 2px;
+            padding-top: 0px;
+        }
+
+        nav li, nav ul
+        {
+            display: block;
+            padding: 2px;
+        }
+
+        aside{
+            display: none;
+        }
+
+        section#centrale
+        {
+            width: 95%
+        }
+
+        #contactForm *
+        {
+            width: 100%;
+        }
+
+
+    }
+
+}
